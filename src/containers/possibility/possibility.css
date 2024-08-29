@@ -1,0 +1,60 @@
+.possibility{
+
+}
+
+.possibility__grid{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     align-items: center;
+     justify-items: center;
+     gap: 6rem;
+}
+
+@media screen and (min-width:768px) {
+     .possibility__grid{
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+.possibility__container-img{
+
+}
+
+.possibility__img{
+     width: 35rem;
+}
+
+@media screen and (min-width:768px) {
+     .possibility__img{
+          width: 50rem;
+     }
+}
+
+.possibility__info{
+     display: flex;
+     flex-direction: column;
+     gap: 3rem;
+}
+
+
+.possibility__extra:first-of-type{
+     color: var(--color-subtext-1);
+}
+
+.possibility__extra:last-of-type{
+     color: var(--color-subtext-2);
+}
+
+
+
+.possibility__heading{
+
+}
+
+.possibility__title{
+     
+}
+
+.possibility__data{
+     color: var(--color-text)
+}

@@ -1,0 +1,116 @@
+/* Reset */
+html{
+     box-sizing: border-box;
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+}
+* ,
+*::after,
+*::before{
+     box-sizing: inherit;
+     padding: 0;
+     margin: 0;
+}
+
+body{
+     font-size: 1.6rem;
+     background-color: var(--color-bg);
+     font-family: var(--font-family);
+     line-height: 1.6;
+}
+
+h2{
+     font-size: 3rem;
+}
+
+a{
+     color: inherit;
+     text-decoration: none;
+}
+
+img{
+     display: block;
+     /* max-width: 100%; */
+     max-inline-size: 100%;
+     /* block-size: auto; */
+     height: auto;
+}
+
+ul{
+     list-style: none;
+}
+
+/* Reusable*/
+.container {
+     width: min(90%, 110rem);
+     margin: 0 auto;
+}
+
+.gradient__bg{
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 25%, rgba(0, 43, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient__text{
+     background: var(--gradient-text);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.section{
+     margin: 3rem 0;
+     padding: 3rem 0;
+}
+
+@media screen and (min-width:768px) {
+     .section{
+          margin: 6rem 0;
+          padding: 6rem 0;
+     }
+}
+
+.btn{
+     all: unset;
+     text-align: center;
+     padding: 1rem 2.5rem;
+     color: #fff;
+     font-weight: 500;
+     border-radius: 5px;
+     border: 0;
+     outline: none;
+     cursor: pointer;
+     transition: all .3s;
+}
+.btn--primary{
+     background-color: #ff4820;
+}
+.btn--primary:hover{
+     background-color: #c62c0b;
+}
+
+
+[class*="__heading"] h2{
+     font-weight: 800;
+}
+
+[class*="__heading"] :nth-child(2){
+     font-weight: 600;
+}
+
+
+/* Animations */
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes scale-up-center {
+     0% {
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+     }
+     100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+     }    
+}

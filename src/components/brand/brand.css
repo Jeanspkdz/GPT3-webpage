@@ -1,0 +1,15 @@
+.brand{
+
+}
+
+.brand__grid{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.brand__item{
+     width: 15rem;
+     margin: 3rem;
+}

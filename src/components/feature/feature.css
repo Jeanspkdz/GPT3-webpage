@@ -1,0 +1,26 @@
+.feature{
+
+}
+
+.feature__title{
+     padding: 1.5rem 0;
+     color: #fff;
+     position: relative;
+     /* border: 1px solid #fff; */
+}
+
+.feature__title::before{
+     content: "";
+     display: block;
+     height: 3px;
+     width: 40px;
+     position: absolute;
+     top: 0%;
+     background: var(--gradient-text);
+     
+
+}
+
+.feature__data{
+     color: var(--color-text);
+}
